@@ -1,67 +1,77 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #141414;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #141414;
 }
 .container {
-    text-align: center;
-    background-color:#1F1F1F;
-    padding: 50px 20px;
-    border-radius: 20px;
-    max-width: 500px;
-    width: 90%;
+  text-align: center;
+  background-color: #1f1f1f;
+  padding: 50px 10px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 90%;
 }
 .profile img {
-    width: 100px;
-    border-radius: 100px;
-    margin-bottom: 20px;
+  width: 90px;
+  border-radius: 100px;
+  margin-bottom: 15px;
 }
 
 .text h1 {
-    color: white;
-    margin-bottom: 10px;
-    font-size: 1.5em;
+  color: white;
+  margin-bottom: 10px;
+  font-size: 1.5em;
 }
 
-.text h2 { 
-    font-size: 0.8em;  
-    color: hsl(75, 94%, 57%);  
-    margin-bottom: 20px;
+.text h2 {
+  font-size: 0.8em;
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 20px;
 }
 
 .text p {
-    color:white;
-    font-size: 0.75em;
-    margin-bottom: 20px;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .btn a {
-    display: block;
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    background-color: #333333;
-    width: auto;
-    max-width: 500px;
-    justify-content: center;
-    border-radius: 20px;
-    text-decoration: none;
-    color: white;
-    display: block;
-    font-weight: 500;
-    transition: color, background-color 0.9s;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: #333333;
+  justify-content: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-weight: 500;
+  transition: color, background-color 0.4s;
 }
 
 .btn a:hover {
-    color: black;
-    background-color: hsl(75, 94%, 57%);
+  color: black;
+  background-color: hsl(75, 94%, 57%);
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 375px;
+  }
+  .btn a {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
